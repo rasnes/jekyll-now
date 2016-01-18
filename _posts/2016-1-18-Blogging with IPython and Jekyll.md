@@ -84,5 +84,5 @@ Some code copied from [Wikipedia](https://en.wikipedia.org/wiki/Matplotlib):
     >>> plt.show()
 
 
-![png](output_4_0.png)
+![A simple graph produced in matplotlib](/images/output_4_0.png)
 
