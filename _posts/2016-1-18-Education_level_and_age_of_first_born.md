@@ -1,6 +1,5 @@
 ---
 layout: post
-title: Education level and age when first child is born
 published: true
 ---
 
