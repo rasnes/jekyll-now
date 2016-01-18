@@ -122,7 +122,7 @@ p <- ggplot(df_tidy, aes(degree, agekdbrn))
 p + geom_boxplot((aes(fill = degree))) + labs(x="Respondent's highest completed degree", y="Respondent's age when 1st child born")
 ```
 
-![](project_final_files/figure-html/unnamed-chunk-3-1.png) 
+![](/images/education_figures/unnamed-chunk-3-1.png) 
 
 From the table and the boxplot it seems like there is a quite strong correlation between age when first child is born and highest educational degree completed. But, we need to perform some statistical analysis of the data before we be conclude that this is the case.
 
@@ -141,7 +141,7 @@ In order to use ANOVA we need to check that the following criteria are met:
 To easiest way to check for normality is probably to draw the histograms of the distributions (within each group) and their corresponding normal probability plots:
 
 
-![](project_final_files/figure-html/normality_figs-1.png) ![](project_final_files/figure-html/normality_figs-2.png) 
+![](/images/education_figures/normality_figs-1.png) ![](/images/education_figures/normality_figs-2.png) 
 
 From the plots it seems like there is a trend towards normality from left to right (Lt High School to Graduate). To my judgment, all distributions look sufficently normal when considering the large (>100) sample sizes except for Lt High School, which is quite heavily right skewed and the normality plot is not very straight. On the other side, the sample size is pretty large (242), which can make up for some of the skewness. I am not completely certain that this group actually meets the normality criteria, but for the sake of this study we assume it does and can hence continue with the analysis of variation.
 
