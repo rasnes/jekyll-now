@@ -1,3 +1,8 @@
+---
+layout: post
+title: Blog with IPython
+---
+
 
 Lately I've been using [IPython][] to do most of my tinkering work.
 It's pretty neat, to say the least.
