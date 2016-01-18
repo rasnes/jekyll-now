@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>2016-1-18-Education_level_and_age_of_first_born</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+</head>
+<body>
+<h1>Education level and age when first child is born</h1>
+<p>2 November 2015  </p>
+<!-- For more info on RMarkdown see http://rmarkdown.rstudio.com/ -->
+<!-- Enter the code required to load your data in the space below. The data will be loaded but the line of code won't show up in your write up (echo=FALSE) in order to save space-->
+<!-- In the remainder of the document, add R code chunks as needed -->
+<h3>Introduction:</h3>
+<p>In this project report the aim is to investigate the following research question:</p>
+<p><strong>Is there a relationship between the highest education degree and age when first child is born for US residents?</strong> </p>
+<p>It is a common belief that people who complete higher education get children when they're older than people who &quot;only&quot; complete High School. But, is it in fact so? It might be a belief that is primarily due to people's own experience or perhaps even prejudice. In this project report we will use data from the US General Social Survey (GSS)  to investigate whether there actually exists a significant difference or if it is just a common misconception.</p>
+<h3>Data:</h3>
+<p>The data used is from GSS data set. The data in the GSS is collected via in-person interviews with respondents of approximately 90 minutes <a href="http://thearda.com/archive/files/descriptions/gss12pan.asp">[1]</a>. The dataset used in this study is the Coursera abstract of the GSS, available <a href="http://bit.ly/dasi_anes_data">here</a>, which consists of survey data from 1972 until 2012. It has 50761 rows, which correspond to  respondents (i.e. the cases), and 114 columns, which correspond to the answers given by the respondents to the survey questions.</p>
+<p>The variables used in this study are called 'degree' (categorical variable, 5 levels) and 'agekdbrn' (numerical variable). In addition to these two variables, the variable 'childs' (numerical variable) to determine if NA's in agekdbrn might be due to having 0 children (to include the category 0 children might create a broader and more interesting scope than just age of those who have children). Only data from 2012 will be used in this study.</p>
+<p>The population of interest is the overall US population. The GSS is designed to be able to answer questions for the US population based on the samples, whether it is for comparing trends over time or intrayear comparisons. There might be biases related to, e.g.: participation in the survey (being volunteer, having access to telephone etc.), geography (are the responders well distributed throughout the US?), sociology (are people from all social backgrounds and classes included in proportions similar to the US population?). Hopefully the GSS is created by professional statisticians that deliberately aim to reduce the chance for such biases occuring, so that the results from this study will have little bias.</p>
+<p>This is an observational study, as the data is collected without interfering with how the data has arised, the data is retrospective, and there is no randomly assigning of subjects to treatments. </p>
+<p>Since this is will be an observational study, it is in itself limited to establishing association between variables and not causality. If a significant relationship between degree and age of first child is found, one could start speculating on causal relationship, but it should be clearly stated that it is speculation (unless potential further studies are conducted). For instance, one might argue that &quot;being able to combine higher studies and providing for a child is difficult&quot;, but not determine whether it was because someone got a child at a young age that they didn't complete higher education or, the other way around, didn't get a child because he/she were taking higher education.</p>
+<h3>Exploratory data analysis:</h3>
+<p>First, we want to subset the variables of interest and for the appropriate year. We then take a look at it with <code>head</code>, and discover that <code>agkdbrn</code> contain NA's - the data needs some cleaning before it can be used for analysis. To investigate what that might be we check if the number of NA's in <code>agkdbrn</code> corresponds to the number of respondents in <code>childs</code> that say they have no children (<code>childs</code>=0). We find that the number is almost similar (544 vs. 536), which justifies removing all NA's  from the data that will be used in the study.</p>
+<p><code>r
+df &lt;- subset(gss, year == 2012, select = c(degree, agekdbrn, childs)) # Create subset o
+head(df)</code></p>
+<p>```</p>
+<h2>degree agekdbrn childs</h2>
+<h2>55088    Bachelor       NA      0</h2>
+<h2>55089 High School       NA      0</h2>
+<h2>55090 High School       32      2</h2>
+<h2>55091 High School       24      2</h2>
+<h2>55092    Bachelor       24      3</h2>
+<h2>55093    Bachelor       25      2</h2>
+<p>```</p>
+<p><code>r
+sum(is.na(df$agekdbrn))</code></p>
+<p>```</p>
+<h2>[1] 544</h2>
+<p>```</p>
+<p><code>r
+table(df$childs)</code></p>
+<p>```</p>
+<h2></h2>
+<h2>0   1   2   3   4   5   6   7   8</h2>
+<h2>536 274 569 301 167  56  33  12  23</h2>
+<p>```</p>
+<p><code>r
+df_tidy &lt;- na.omit(df[ , c('degree', 'agekdbrn')])
+str(df_tidy)</code></p>
+<p>```</p>
+<h2>'data.frame':	1423 obs. of  2 variables:</h2>
+<h2>$ degree  : Factor w/ 5 levels &quot;Lt High School&quot;,..: 2 2 4 4 3 1 1 1 4 2 ...</h2>
+<h2>$ agekdbrn: int  32 24 24 25 23 17 18 22 26 20 ...</h2>
+<h2>- attr(*, &quot;na.action&quot;)=Class 'omit'  Named int [1:551] 1 2 10 20 27 31 33 35 37 38 ...</h2>
+<h2>.. ..- attr(*, &quot;names&quot;)= chr [1:551] &quot;55088&quot; &quot;55089&quot; &quot;55097&quot; &quot;55107&quot; ...</h2>
+<p>```</p>
+<p>The tidy data frame has 1423 cases of the variables <code>degree</code> and <code>agekdbrn</code>. Now we would like to calculate some summary statistics for it:</p>
+<p><code>r
+library(dplyr); library(knitr)
+by_degree &lt;- group_by(df_tidy, degree)
+stats &lt;- data.frame(summarize(by_degree, mean(agekdbrn), median(agekdbrn), sd(agekdbrn), length(agekdbrn)))
+stats$degree &lt;- NULL # Removing degree column
+stats &lt;- t(stats)
+colnames(stats) = levels(by_degree$degree); rownames(stats) = c('Mean', 'Median', 'SD', 'Sample size')
+kable(stats, digits = 2)</code></p>
+<pre><code>           Lt High School   High School   Junior College   Bachelor   Graduate
+</code></pre>
+
+<hr />
+<p>Mean                    21.10         23.22            24.43      27.07      28.74
+Median                  20.00         22.00            23.50      27.00      29.00
+SD                       4.74          5.22             5.31       4.89       5.48
+Sample size            242.00        709.00           110.00     226.00     136.00</p>
+<p>From the table it seems like there is a clear trend of increasing mean age for first child born with highest educational degree completed. A boxplot of the data also indicate this:</p>
+<p><code>r
+library(ggplot2)</code></p>
+<p>```</p>
+<h2>Warning: package 'ggplot2' was built under R version 3.2.3</h2>
+<p>```</p>
+<p><code>r
+p &lt;- ggplot(df_tidy, aes(degree, agekdbrn))
+p + geom_boxplot((aes(fill = degree))) + labs(x=&quot;Respondent's highest completed degree&quot;, y=&quot;Respondent's age when 1st child born&quot;)</code></p>
+<p><img src="project_final_files/figure-html/unnamed-chunk-3-1.png" /> </p>
+<p>From the table and the boxplot it seems like there is a quite strong correlation between age when first child is born and highest educational degree completed. But, we need to perform some statistical analysis of the data before we be conclude that this is the case.</p>
+<h3>Inference:</h3>
+<p>Considering the variables we have in this study - a categorical with 5 levels and one numerical - it seems that analysis of variation (ANOVA) and, potentially, pairwise tests are the most appropriate statistical techniques to use.</p>
+<p>In order to use ANOVA we need to check that the following criteria are met:</p>
+<ol>
+<li>
+Independence
+a. within groups: Assumed to be met by the survey design of the GSS. The survey is designed to be &quot;big enough&quot; that one can for data for each year perform inference. The survey should be made up of random samples of the population, both within across each educational group, and number of respondents make up less than 10% of the US population.
+b. between groups: Assumed to be met by the survey design of the GSS (reasoning as above).
+</li>
+<li>Equal variance: Each group should have approximately equal variance. Considering the standard deviation calculated in the table of summary statistics above, and the shape of the boxplots, we can assume that the variance is equal &quot;enough&quot; to pass this criteria.</li>
+<li>Approximately normal: The distributions within in each group should be nearly normal. This is probably the toughest criterion to meet, as explained more in detail below.</li>
+</ol>
+<p>To easiest way to check for normality is probably to draw the histograms of the distributions (within each group) and their corresponding normal probability plots:</p>
+<p><img src="project_final_files/figure-html/normality_figs-1.png" /> <img src="project_final_files/figure-html/normality_figs-2.png" /> </p>
+<p>From the plots it seems like there is a trend towards normality from left to right (Lt High School to Graduate). To my judgment, all distributions look sufficently normal when considering the large (&gt;100) sample sizes except for Lt High School, which is quite heavily right skewed and the normality plot is not very straight. On the other side, the sample size is pretty large (242), which can make up for some of the skewness. I am not completely certain that this group actually meets the normality criteria, but for the sake of this study we assume it does and can hence continue with the analysis of variation.</p>
+<p>It should be noted that there are some outliers in the High School group, but they don't seem to &quot;distort&quot; the distribution, or affect summary statistics, significantly. </p>
+<p>We continue with the analysis of variation, where the following hypthesis test is used:</p>
+<p>$H<em>0: \mu</em>{LHS}=\mu<em>{HS}=\mu<em>{JC}=\mu</em>{Bachelor}=\mu</em>{Graduate}$</p>
+<p>$H_a:$ At least one pair of means are different from each other </p>
+<p><code>r
+fit &lt;- aov(agekdbrn ~ degree, data=df_tidy)
+summary(fit)</code></p>
+<p>```</p>
+<h2>Df Sum Sq Mean Sq F value Pr(&gt;F)</h2>
+<h2>degree         4   7656  1914.1   73.01 &lt;2e-16 ***</h2>
+<h2>Residuals   1418  37175    26.2</h2>
+<h2>---</h2>
+<h2>Signif. codes:  0 '<em><strong>' 0.001 '</strong>' 0.01 '</em>' 0.05 '.' 0.1 ' ' 1</h2>
+<p>```</p>
+<p>We can see that the resulting p-value from the F distribution is close to zero (&lt;2e-16), which indicates that there is very likely a relationship between age when first child is born and highest educational degree.</p>
+<p>We can furthere check if there is significance between all educational levels, with two sample t-tests. We choose to investigate the following two two sample t-tests:</p>
+<ul>
+<li>Max mean vs min mean: Graduate vs. Lt High School</li>
+<li>Smallest difference in mean: High school vs. Junior College</li>
+</ul>
+<p>We need to calculate new significance level, by using the Bonferroni correction. This is make sure that/reduce the chance for a significant finding is not due to randomne patterns in the overall data. Significance level used in the ANOVA analysis: 0.05.</p>
+<p>```r
+k = length(levels(df<em>tidy$degree))
+comparison</em>count = k * (k - 1) / 2
+sig<em>level<em>adj = 0.05 / comparison</em>count
+gd &lt;- df</em>tidy[df<em>tidy$degree == &quot;Graduate&quot;, ]
+lhs &lt;- df</em>tidy[df_tidy$degree == &quot;Lt High School&quot;, ]
+hs &lt;- df<em>tidy[df</em>tidy$degree == &quot;High School&quot;, ]
+jc &lt;- df<em>tidy[df</em>tidy$degree == &quot;Junior College&quot;, ]</p>
+<p>sig<em>level</em>adj # New significance level
+```</p>
+<p>```</p>
+<h2>[1] 0.005</h2>
+<p>```</p>
+<p><code>r
+t.test(gd$agekdbrn, lhs$agekdbrn)</code></p>
+<p>```</p>
+<h2></h2>
+<h2>Welch Two Sample t-test</h2>
+<h2></h2>
+<h2>data:  gd$agekdbrn and lhs$agekdbrn</h2>
+<h2>t = 13.648, df = 247.7, p-value &lt; 2.2e-16</h2>
+<h2>alternative hypothesis: true difference in means is not equal to 0</h2>
+<h2>95 percent confidence interval:</h2>
+<h2>6.540383 8.746564</h2>
+<h2>sample estimates:</h2>
+<h2>mean of x mean of y</h2>
+<h2>28.74265  21.09917</h2>
+<p>```</p>
+<p><code>r
+t.test(jc$agekdbrn, hs$agekdbrn)</code></p>
+<p>```</p>
+<h2></h2>
+<h2>Welch Two Sample t-test</h2>
+<h2></h2>
+<h2>data:  jc$agekdbrn and hs$agekdbrn</h2>
+<h2>t = 2.2188, df = 143.58, p-value = 0.02807</h2>
+<h2>alternative hypothesis: true difference in means is not equal to 0</h2>
+<h2>95 percent confidence interval:</h2>
+<h2>0.1314746 2.2773727</h2>
+<h2>sample estimates:</h2>
+<h2>mean of x mean of y</h2>
+<h2>24.42727  23.22285</h2>
+<p>```</p>
+<p>From the results we can see that there is a significant difference between the max and min means (p-value = &lt;2.2e-16, which is much smaller than 0.005) and that there is <em>no</em> significant difference between High School and Junior College (p-value = 0.028, which is higher than 0.005).</p>
+<h3>Conclusion:</h3>
+<p>The results of the ANOVA analysis suggest a strong relationship between age when first child is born and highest completed educational degree. The age seem to increase with educational degree, and significantly so. The resulting p-value is so low that even the most stringent significance criteria is met.</p>
+<p>On the other hand, however, the multiple comparison tests performed indicate that it is not necessarily a significant difference between all levels of highest completed educational degree.</p>
+<h3>References:</h3>
+<p>http://thearda.com/archive/files/descriptions/gss12pan.asp</p>
+<p>Smith, Tom W., Michael Hout, and Peter V. Marsden. General Social Survey, 1972-2012 [Cumulative File]. ICPSR34802-v1. Storrs, CT: Roper Center for Public Opinion Research, University of Connecticut /Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributors], 2013-09-11. doi:10.3886/ICPSR34802.v1</p>
+<p>The codebook below lists all variables, the values they take, and the survey questions associated with them. It is available here: https://d396qusza40orc.cloudfront.net/statistics%2Fproject%2Fgss1.html</p>
+<p>Link to the data set: http://bit.ly/dasi<em>anes</em>data</p>
+<h3>Appendix:</h3>
+<p><code>r
+head(df_tidy, 50)</code></p>
+<p>```</p>
+<h2>degree agekdbrn</h2>
+<h2>55090    High School       32</h2>
+<h2>55091    High School       24</h2>
+<h2>55092       Bachelor       24</h2>
+<h2>55093       Bachelor       25</h2>
+<h2>55094 Junior College       23</h2>
+<h2>55095 Lt High School       17</h2>
+<h2>55096 Lt High School       18</h2>
+<h2>55098 Lt High School       22</h2>
+<h2>55099       Bachelor       26</h2>
+<h2>55100    High School       20</h2>
+<h2>55101    High School       16</h2>
+<h2>55102 Lt High School       18</h2>
+<h2>55103    High School       25</h2>
+<h2>55104    High School       28</h2>
+<h2>55105    High School       21</h2>
+<h2>55106    High School       34</h2>
+<h2>55108 Lt High School       18</h2>
+<h2>55109 Lt High School       25</h2>
+<h2>55110 Junior College       23</h2>
+<h2>55111 Junior College       28</h2>
+<h2>55112    High School       37</h2>
+<h2>55113       Bachelor       27</h2>
+<h2>55115 Lt High School       33</h2>
+<h2>55116       Bachelor       27</h2>
+<h2>55117    High School       22</h2>
+<h2>55119 Junior College       28</h2>
+<h2>55121       Bachelor       34</h2>
+<h2>55123       Graduate       33</h2>
+<h2>55127    High School       17</h2>
+<h2>55129    High School       27</h2>
+<h2>55131       Bachelor       27</h2>
+<h2>55132       Bachelor       34</h2>
+<h2>55133       Bachelor       22</h2>
+<h2>55134       Bachelor       22</h2>
+<h2>55135       Graduate       35</h2>
+<h2>55136       Bachelor       23</h2>
+<h2>55137       Graduate       26</h2>
+<h2>55138       Bachelor       29</h2>
+<h2>55139       Bachelor       29</h2>
+<h2>55140       Graduate       37</h2>
+<h2>55141 Junior College       33</h2>
+<h2>55142       Graduate       33</h2>
+<h2>55143       Graduate       30</h2>
+<h2>55144    High School       23</h2>
+<h2>55145    High School       21</h2>
+<h2>55146 Lt High School       18</h2>
+<h2>55147 Lt High School       18</h2>
+<h2>55148       Graduate       19</h2>
+<h2>55149       Graduate       23</h2>
+<h2>55150 Lt High School       28</h2>
+<p>```</p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
