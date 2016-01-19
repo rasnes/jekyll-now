@@ -19,13 +19,13 @@ html {
 
 body {
 	background: $white;
-  font: 13px/1.4 $helvetica;
+  font: 14px/1.4 $helvetica;
   color: $darkGray;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 850px;
+  max-width: 800px;
   padding: 0 10px;
   width: 100%;
 }
@@ -287,3 +287,8 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+// Added by RNN
+pre {
+    white-space: pre-wrap;
+}
