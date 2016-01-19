@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Blog with IPython
+summary: Example of a blogpost produced in IPython Notebook
 ---
 
 
