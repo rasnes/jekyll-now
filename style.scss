@@ -338,6 +338,16 @@ tr:nth-child(odd) td { background: #FEFEFE; }
 
 //tr:hover { background: #666;} /* Hover cell effect! */
 
+@media screen and (max-width: 640px) {
+	table {
+		overflow-x: auto;
+		display: block;
+	}
+}
+
+
+
+// Not so nice table implementation:
 /*
 table {
     //border:#ccc 1px solid;
