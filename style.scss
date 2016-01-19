@@ -294,3 +294,7 @@ pre {
     white-space: pre-wrap; // Wraps code in code blocks
     overflow: hidden;
 }
+
+iframe::-webkit-scrollbar {
+     display: none; 
+}
