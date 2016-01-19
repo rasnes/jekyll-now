@@ -91,3 +91,6 @@ Some code copied from [Wikipedia](https://en.wikipedia.org/wiki/Matplotlib):
 
 ![A simple graph produced in matplotlib](/images/output_4_0.png)
 
+{% highlight python %}
+    print('hello world!')
+{% endhighlight %}
