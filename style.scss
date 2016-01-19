@@ -21,7 +21,7 @@ body {
 	background: $white;
   font: 14px/1.4 $helvetica;
   color: $darkGray;
-  overflow-wrap: break-word; // Removes scroll bars from code blocks, cause they are ugly
+  overflow-wrap: break-word; // Breaks long words over several lines.
 }
 
 .container {
@@ -292,7 +292,7 @@ footer {
 // Added by RNN
 pre {
     white-space: pre-wrap; // Wraps code in code blocks
-    overflow: hidden;
+    overflow: auto;
 }
 
 iframe::-webkit-scrollbar {
