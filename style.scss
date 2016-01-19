@@ -291,6 +291,7 @@ footer {
 
 // Added by RNN
 
+/* pr from lanyon theme - does not remove the ugly borders.
 pre {
   display: block;
   margin-top: 0;
@@ -310,8 +311,9 @@ pre code {
   color: inherit;
   background-color: transparent;
 }
+*/
 
-/*
+
 pre {
     white-space: pre-wrap; // Wraps code in code blocks
     //overflow: auto;
@@ -326,7 +328,7 @@ pre {
         white-space: -moz-pre-wrap;
         white-space: -o-pre-wrap;
     }
-*/
+
 
 table { 
 	color: #333; /* Lighten up font color */
