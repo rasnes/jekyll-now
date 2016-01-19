@@ -148,9 +148,9 @@ It should be noted that there are some outliers in the High School group, but th
 
 We continue with the analysis of variation, where the following hypthesis test is used:
 
-$$H_0: \mu_{LHS}=\mu_{HS}=\mu_{JC}=\mu_{Bachelor}=\mu_{Graduate}$$
+`$$H_0: \mu_{LHS}=\mu_{HS}=\mu_{JC}=\mu_{Bachelor}=\mu_{Graduate}$$`
 
-$$H_a:$$ At least one pair of means are different from each other 
+`$$H_a:$$` At least one pair of means are different from each other 
 
 
 ```r
