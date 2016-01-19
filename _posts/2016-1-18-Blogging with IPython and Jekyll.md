@@ -80,14 +80,14 @@ Below is some example code!
 
 Some code copied from [Wikipedia](https://en.wikipedia.org/wiki/Matplotlib):
 
-
-    >>> import matplotlib.pyplot as plt
-    >>> import numpy as np
-    >>> a = np.linspace(0,10,100)
-    >>> b = np.exp(-a)
-    >>> plt.plot(a,b)
-    >>> plt.show()
-
+```python
+>>> import matplotlib.pyplot as plt
+>>> import numpy as np
+>>> a = np.linspace(0,10,100)
+>>> b = np.exp(-a)
+>>> plt.plot(a,b)
+>>> plt.show()
+```
 
 ![A simple graph produced in matplotlib](/images/output_4_0.png)
 
