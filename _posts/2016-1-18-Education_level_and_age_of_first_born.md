@@ -152,6 +152,9 @@ We continue with the analysis of variation, where the following hypthesis test i
 
 `$$H_a:$$` At least one pair of means are different from each other 
 
+Here is an example MathJax inline rendering \\( 1/x^{2} \\), and here is a block rendering: 
+\\[ \frac{1}{n^{2}} \\]
+
 
 ```r
 fit <- aov(agekdbrn ~ degree, data=df_tidy)
