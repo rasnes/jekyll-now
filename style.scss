@@ -292,7 +292,8 @@ footer {
 // Added by RNN
 pre {
     white-space: pre-wrap; // Wraps code in code blocks
-    overflow: auto;
+    //overflow: auto;
+    overflow-x: auto;
     }
     code {
         font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
