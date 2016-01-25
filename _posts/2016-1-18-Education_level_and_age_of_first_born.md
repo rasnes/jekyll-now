@@ -96,13 +96,13 @@ stats <- t(stats)
 colnames(stats) = levels(by_degree$degree); rownames(stats) = c('Mean', 'Median', 'SD', 'Sample size')
 kable(stats, digits = 2)
 ```
+|             | Lt High School | High School | Junior College | Bachelor | Graduate |
+|-------------|----------------|-------------|----------------|----------|----------|
+| Mean        | 21.10          | 23.22       | 24.43          | 27.07    | 28.74    |
+| Median      | 20.00          | 22.00       | 23.50          | 27.00    | 29.00    |
+| SD          | 4.74           | 5.22        | 5.31           | 4.89     | 5.48     |
+| Sample size | 242.00         | 709.00      | 110.00         | 226.00   | 136.00   |
 
-               Lt High School   High School   Junior College   Bachelor   Graduate
-------------  ---------------  ------------  ---------------  ---------  ---------
-Mean                    21.10         23.22            24.43      27.07      28.74
-Median                  20.00         22.00            23.50      27.00      29.00
-SD                       4.74          5.22             5.31       4.89       5.48
-Sample size            242.00        709.00           110.00     226.00     136.00
 
 From the table it seems like there is a clear trend of increasing mean age for first child born with highest educational degree completed. A boxplot of the data also indicate this:
 
