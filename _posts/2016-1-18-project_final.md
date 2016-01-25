@@ -1,3 +1,8 @@
+---
+layout: post
+title: ANOVA project
+---
+
 # Education level and age when first child is born
 2 November 2015  
 

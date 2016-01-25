@@ -1,7 +1,8 @@
 ---
 layout: post
-title: Education level and age when first child is born
+published: true
 ---
+
 
 # Education level and age when first child is born
 2 November 2015  
@@ -103,6 +104,15 @@ kable(stats, digits = 2)
 | SD          | 4.74           | 5.22        | 5.31           | 4.89     | 5.48     |
 | Sample size | 242.00         | 709.00      | 110.00         | 226.00   | 136.00   |
 
+<<<<<<< HEAD
+=======
+|             | Lt High School | High School | Junior College | Bachelor | Graduate |
+|-------------|----------------|-------------|----------------|----------|----------|
+| Mean        | 21.10          | 23.22       | 24.43          | 27.07    | 28.74    |
+| Median      | 20.00          | 22.00       | 23.50          | 27.00    | 29.00    |
+| SD          | 4.74           | 5.22        | 5.31           | 4.89     | 5.48     |
+| Sample size | 242.00         | 709.00      | 110.00         | 226.00   | 136.00   |
+>>>>>>> b9a1756a58e37c5fed85bb5e309865d3b91e147c
 
 From the table it seems like there is a clear trend of increasing mean age for first child born with highest educational degree completed. A boxplot of the data also indicate this:
 
@@ -120,7 +130,7 @@ p <- ggplot(df_tidy, aes(degree, agekdbrn))
 p + geom_boxplot((aes(fill = degree))) + labs(x="Respondent's highest completed degree", y="Respondent's age when 1st child born")
 ```
 
-![](project_final_files/figure-html/unnamed-chunk-3-1.png) 
+![](/images/education_figures/unnamed-chunk-3-1.png) 
 
 From the table and the boxplot it seems like there is a quite strong correlation between age when first child is born and highest educational degree completed. But, we need to perform some statistical analysis of the data before we be conclude that this is the case.
 
@@ -139,7 +149,7 @@ In order to use ANOVA we need to check that the following criteria are met:
 To easiest way to check for normality is probably to draw the histograms of the distributions (within each group) and their corresponding normal probability plots:
 
 
-![](project_final_files/figure-html/normality_figs-1.png) ![](project_final_files/figure-html/normality_figs-2.png) 
+![](/images/education_figures/normality_figs-1.png) ![](/images/education_figures/normality_figs-2.png) 
 
 From the plots it seems like there is a trend towards normality from left to right (Lt High School to Graduate). To my judgment, all distributions look sufficently normal when considering the large (>100) sample sizes except for Lt High School, which is quite heavily right skewed and the normality plot is not very straight. On the other side, the sample size is pretty large (242), which can make up for some of the skewness. I am not completely certain that this group actually meets the normality criteria, but for the sake of this study we assume it does and can hence continue with the analysis of variation.
 
@@ -147,10 +157,11 @@ It should be noted that there are some outliers in the High School group, but th
 
 We continue with the analysis of variation, where the following hypthesis test is used:
 
-$H_0: \mu_{LHS}=\mu_{HS}=\mu_{JC}=\mu_{Bachelor}=\mu_{Graduate}$
+\\[H_0: \mu_{LHS}=\mu_{HS}=\mu_{JC}=\mu_{Bachelor}=\mu_{Graduate}\\]
 
-$H_a:$ At least one pair of means are different from each other 
+\\(H_a:\\) At least one pair of means are different from each other 
 
+(For mathjax notation in Jekyll, see: http://www.christopherpoole.net/using-mathjax-on-githubpages.html)
 
 ```r
 fit <- aov(agekdbrn ~ degree, data=df_tidy)

@@ -19,13 +19,14 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 14px/1.4 $helvetica;
   color: $darkGray;
+  overflow-wrap: break-word; // Breaks long words over several lines.
 }
 
 .container {
   margin: 0 auto;
-  max-width: 740px;
+  max-width: 800px;
   padding: 0 10px;
   width: 100%;
 }
@@ -257,7 +258,7 @@ nav {
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
     color: $gray;
-    font-size: 22px;
+    font-size: 14px;
     font-style: italic;
   }
 
@@ -287,3 +288,112 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+// Added by RNN
+
+/* pr from lanyon theme - does not remove the ugly borders.
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: .8rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9;
+}
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
+}
+*/
+
+
+pre {
+    white-space: pre-wrap; // Wraps code in code blocks
+    //overflow: auto;
+    overflow-x: auto;
+    }
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+    }
+
+
+table { 
+	color: #333; /* Lighten up font color */
+	font-family: Helvetica, Arial, sans-serif; /* Nicer font */
+	width: 100%; 
+	border-collapse: collapse; 
+	border-spacing: 0;
+	overflow-x: auto;
+}
+
+td, th { 
+	border-bottom: 1px solid #CCC; height: 30px; /* Make cells a bit taller */
+	padding: 7px;
+	//text-align: left;
+} 
+
+th {
+	background: #F3F3F3; /* Light grey background */
+	font-weight: bold; /* Make sure they're bold */
+	//padding:11px
+}
+
+td {
+	background: #FAFAFA; /* Lighter grey background */
+	text-align: center; /* Center our text */
+}
+
+/* Cells in even rows (2,4,6...) are one color */ 
+tr:nth-child(even) td { background: #F1F1F1; }   
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */ 
+tr:nth-child(odd) td { background: #FEFEFE; }  
+
+//tr:hover { background: #666;} /* Hover cell effect! */
+
+
+/*
+@media screen and (max-width: 640px) {
+	table {
+		overflow-x: auto;
+		display: block;
+	}
+}
+*/
+
+
+// Not so nice table implementation:
+/*
+table {
+    //border:#ccc 1px solid;
+    border-radius:3px;
+}
+table th {
+    //padding:21px 25px 22px 25px;
+    //border-top:1px solid #fafafa;
+    border-bottom:1px solid #e0e0e0;
+}
+table tr {
+    padding-left:10px;
+}
+table td {
+    padding:8px;
+    border-top: 1px solid #ffffff;
+    border-bottom:1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+}
+table tr:nth-child(even) {background-color: #f2f2f2}
+*/
