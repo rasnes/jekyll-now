@@ -1,3 +1,10 @@
+---
+layout: page
+title: Courses and books
+permalink: /courses/
+---
+
+
 
 <!--- This is a HTML comment. Copy one of the lines below for an empty table row.
 |                               |                   |               | 
