@@ -45,8 +45,8 @@ Maybe mention which language was used in the courses?
 | Course      					| Provider 			| Created by 					| Grade 	| Certificate |
 |:-------------					|:----------			|:-------------					|:--------	|:----------| 
 | [Data analysis and Statistical Inference](https://www.coursera.org/course/statistics) | Coursera          | Duke University  | 98%    | [coursera.org](https://www.coursera.org/account/accomplishments/records/wh8sTTC6hTD3vbfn)          | 
-| [Machine Learning](https://www.coursera.org/learn/machine-learning)              | Coursera                  |  Stanford University              | 97%          | [None](/images/coursera_courses_without_certificates.png)         | 
-| [Machine Learning Foundations](https://www.coursera.org/learn/ml-foundations)  | Coursera          | University of Washington  | 96%          | [None](/images/coursera_courses_without_certificates.png)           | 
+| [Machine Learning](https://www.coursera.org/learn/machine-learning)              | Coursera                  |  Stanford University              | 97%          | [None](/images/coursera_courses_without_certificates.PNG)         | 
+| [Machine Learning Foundations](https://www.coursera.org/learn/ml-foundations)  | Coursera          | University of Washington  | 96%          | [None](/images/coursera_courses_without_certificates.PNG)           | 
 
 
 ### Computer Science and Programming
@@ -60,7 +60,7 @@ Maybe mention which language was used in the courses?
 
 | Course      					| Provider 			| Created by 				| Grade 	| Certificate |
 |:-------------					|:----------			|:-------------				|:--------	|:----------|  
-| [Business Metrics for Data-Driven Companies](https://www.coursera.org/learn/analytics-business-metrics)     | Coursera         | Duke University     |  93%       | [None](/images/coursera_courses_without_certificates.png)          |
+| [Business Metrics for Data-Driven Companies](https://www.coursera.org/learn/analytics-business-metrics)     | Coursera         | Duke University     |  93%       | [None](/images/coursera_courses_without_certificates.PNG)          |
 
 
 
